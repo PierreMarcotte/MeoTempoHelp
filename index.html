@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr-ca" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="dist/styles.css">
+</head>
+
+<body class="bg-gray-100">
+    <nav class="bg-white z-50 border-b border-gray-200 py-3 h-16 flex items-center fixed top-0 w-full">
+        <div class="container mx-auto flex items-center px-4">
+            <a class="js-menu-link inline-flex p-2 -ml-2 rounded-full border-none whitespace-nowrap mr-auto lg:hidden" href="#menu">
+                <span class="icon-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </span>
+                <span class="sr-only">Menu</span>
+            </a>
+
+            <a class="js-home border-none text-xl font-bold" href="#bienvenue">Meo Tempo</a>
+
+            <a class="js-searchbar-link p-2 -mr-2 rounded-full border-none ml-auto" href="#searchbar">
+                <span class="icon-search">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </span> 
+                <span class="sr-only">Rechercher</span>
+            </a>
+        </div>
+    </nav>
+
+    <div id="page" class="overflow-hidden">
+        <main class="container relative min-h-screen bg-white mx-auto flex flex-row">
+            <aside class="js-menu h-screen bg-white shadow-xl lg:shadow-none absolute top-0 left-0 transition-all opacity-0 pointer-events-none transform -translate-x-12 lg:opacity-100 lg:pointer-events-auto lg:transform-none lg:static w-full lg:w-80 flex-shrink-0 max-w-sm border-r border-gray-200">
+                <div class="pt-16 h-full">
+                    <div class="h-full overflow-scroll">
+                        <nav class="js-sidebar-nav">
+                            <ul>
+                                <li class="border-b border-gray-200"><a class="block border-none hover:text-blue-500 py-3 px-5 font-bold" href="#bienvenue">Bienvenue</a></li>
+                                <li class="border-b border-gray-200"><a class="js-submenu-link before:content block border-none hover:text-blue-500 py-3 px-5 font-bold" href="#section1-1"><span class="mr-2 align-middle arrow transition submenu-opened:rotate-90"></span> Section 1</a>
+                                    <ul class="js-submenu">
+                                        <li><a class="block border-none hover:text-blue-500 py-3 pl-9 pr-5" href="#section1-1">Sous-section 1</a></li>
+                                        <li><a class="block border-none hover:text-blue-500 py-3 pl-9 pr-5" href="#section1-2">Sous-section 2</a></li>
+                                        <li><a class="block border-none hover:text-blue-500 py-3 pl-9 pr-5" href="#section1-3">Sous-section 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="border-b border-gray-200"><a class="js-submenu-link before:content block border-none hover:text-blue-500 py-3 px-5 font-bold" href="#section2-1"><span class="mr-2 align-middle arrow transition submenu-opened:rotate-90"></span> Section 2</a>
+                                    <ul class="js-submenu">
+                                        <li><a class="block border-none hover:text-blue-500 py-3 pl-9 pr-5" href="#section2-1">Sous-section 1</a></li>
+                                        <li><a class="block border-none hover:text-blue-500 py-3 pl-9 pr-5" href="#section2-2">Sous-section 2</a></li>
+                                        <li><a class="block border-none hover:text-blue-500 py-3 pl-9 pr-5" href="#section2-3">Sous-section 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+            <div class="content w-full h-screen">
+                <div class="pt-16 h-full">
+                    <div class="h-full overflow-scroll">
+                        <!-- Bienvenue -->
+                        <section class="js-section p-12" id="bienvenue">
+                            <h1>Bienvenue</h1>
+
+                            <!-- Contenu -->
+                            <div class="js-section-content">
+                                
+                            </div>
+                        </section>
+
+                        <!-- Section 1-1 -->
+                        <section class="js-section p-12" id="section1-1" style="display:none;">
+                            <h2>Section 1</h2>
+                            <h1>Sous-section 1</h1>
+
+                            <!-- Contenu -->
+                            <div class="js-section-content">
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+
+                                <p>Pharetra metus ipsum primis faucibus risus vitae id lacinia vivamus fermentum molestie aptent sem lobortis accumsan nulla cursus praesent auctor vel dignissim torquent pretium euismod donec facilisi tempor porttitor elit neque eleifend ac massa cras integer quam aliquam habitasse quis consectetur eget suspendisse taciti dapibus mollis eros volutpat etiam conubia odio potenti duis lacus platea vulputate elementum laoreet quisque hac viverra congue ad in posuere enim dictum velit curae condimentum tortor phasellus dictumst facilisis maecenas sagittis nam ligula dis venenatis aliquet fringilla class fusce inceptos curabitur lectus et porta luctus nunc consequat magnis commodo cubilia montes nisl vestibulum parturient rhoncus</p>
+                                
+                            </div>
+                        </section>
+
+                        <!-- Section 1-2 -->
+                        <section class="js-section p-12" id="section1-2" style="display:none;">
+                            <h2>Section 1</h2>
+                            <h1>Sous-section 2</h1>
+
+                            <!-- Contenu -->
+                            <div class="js-section-content">
+                                
+                            </div>
+                        </section>
+
+                        <!-- Section 1-3 -->
+                        <section class="js-section p-12" id="section1-3" style="display:none;">
+                            <h2>Section 1</h2>
+                            <h1>Sous-section 3</h1>
+
+                            <!-- Contenu -->
+                            <div class="js-section-content">
+                                
+                            </div>
+                        </section>
+
+                        <!-- Section 1-1 -->
+                        <section class="js-section p-12" id="section2-1" style="display:none;">
+                            <h2>Section 2</h2>
+                            <h1>Sous-section 1</h1>
+
+                            <!-- Contenu -->
+                            <div class="js-section-content">
+                                
+                            </div>
+                        </section>
+
+                        <!-- Section 1-2 -->
+                        <section class="js-section p-12" id="section2-2" style="display:none;">
+                            <h2>Section 2</h2>
+                            <h1>Sous-section 2</h1>
+
+                            <!-- Contenu -->
+                            <div class="js-section-content">
+                                
+                            </div>
+                        </section>
+
+                        <!-- Section 1-3 -->
+                        <section class="js-section p-12" id="section2-3" style="display:none;">
+                            <h2>Section 2</h2>
+                            <h1>Sous-section 3</h1>
+
+                            <!-- Contenu -->
+                            <div class="js-section-content">
+                                
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <aside id="searchbar" class="js-searchbar transition-all opacity-0 pointer-events-none transform translate-x-12 lg:shadow-xl absolute bg-white top-0 right-0 h-screen w-full max-w-sm border-l border-gray-200">
+                <div class="pt-16 h-full">
+                    <div class="h-full overflow-scroll">
+                        <div class="searchbar-wrapper pt-3 px-5">
+                            <input class="js-search focus:ring-blue-500 focus:ring-2 border-none w-full px-5 py-2 ring-1 ring-gray-200 rounded-full" placeholder="Recherche" type="search">
+
+                            <div class="js-search-results"></div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <!-- Template pour résultat de recherche -->
+    <template id="search-result-template">
+        <a class="js-result-link block py-3 border-b border-gray-200" href="#nogo">
+            <span class="js-result-title block text-sm font-bold">test</span>
+            <span class="js-result-content block text-xs text-gray-500">test</span>
+        </a>
+    </template>
+    <script src="dist/manifest.js"></script>
+    <script src="dist/vendor.js"></script>
+    <script src="dist/scripts.js"></script>
+</body>
+
+</html>
